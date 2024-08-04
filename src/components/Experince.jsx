@@ -5,17 +5,20 @@ const projects = [
   {
     name: "Pinterest Clone",
     description: "A web application mimicking Pinterest with user authentication, image pinning, and dynamic boards.",
-    technologies: " Node.js, Express, MongoDB,Ejs,BootStrap,Authentication & Security",
+    technologies: "Node.js, Express, MongoDB, Ejs, BootStrap, Authentication & Security",
+    link: "https://github.com/BhushanJadhao/dataAssociation-Pintrest"
   },
   {
     name: "Live Location Tracker",
     description: "An app that tracks and displays live locations of users on a map, integrating real-time updates.",
-    technologies: " Node.js, Express, Socket.io, LeafLeat,Ejs",
+    technologies: "Node.js, Express, Socket.io, LeafLeat, Ejs",
+    link: "https://github.com/BhushanJadhao/TravelTracker"
   },
   {
     name: "To-Do List App",
     description: "A task management application that allows users to add, delete, and manage tasks with backend integration.",
-    technologies: "Node.js, Express, MongoDB,Html,Css",
+    technologies: "Node.js, Express, MongoDB, Html, Css",
+    link: "https://github.com/BhushanJadhao/to_do_list"
   },
   // Add more projects as needed
 ];
@@ -45,7 +48,7 @@ const Project = () => {
             <p className="text-white mt-2 mb-4">{project.description}</p>
             <p className="text-neutral-400">Technologies: {project.technologies}</p>
             <a 
-              href="https://github.com/BhushanJadhao/project-link" 
+              href={project.link} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-blue-400 underline"
